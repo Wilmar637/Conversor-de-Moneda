@@ -13,24 +13,26 @@ Aplicación de consola desarrollada en **Java 17** con arquitectura **MVC (Model
 - Arquitectura limpia basada en MVC
 - Manejo de errores al consultar la API
 - Serialización de resultados en archivos JSON
+- Variables de entorno para proteger la clave de API
 - Código documentado y fácil de extender
 
 ---
 
 ## 🗂️ Estructura del Proyecto
 
+```text
 ConversorDeMonedas/
-│
 ├── src/
-│ ├── controlador/ # Lógica de control (ConversorControlador)
-│ ├── modelo/ # Clases de dominio (Moneda, ConsultaMoneda)
-│ ├── util/ # Utilidades (GeneradorDeArchivo)
-│ └── vista/ # Interfaz (Main / Principal)
-│
-├── .gitignore
+│   ├── controlador/           # Lógica de control (ConversorControlador)
+│   ├── modelo/                # Clases de dominio (Moneda, ConsultaMoneda)
+│   ├── util/                  # Utilidades (GeneradorDeArchivo)
+│   └── vista/                 # Interfaz de usuario (Principal)
+├── .env                       # Variables de entorno (clave API) [ignorado por Git]
+├── .gitignore                 # Ignora archivos sensibles como .env
+├── .gitattributes             # Normaliza finales de línea entre sistemas
 ├── README.md
 └── ConversorDeMonedas.iml
-
+```
 
 ---
 
@@ -39,17 +41,18 @@ ConversorDeMonedas/
 - Java 17 o superior
 - Acceso a internet (para consumo de la API)
 - [Gson 2.10.1](https://github.com/google/gson) para manejo de JSON
+- Archivo `.env` con tu API Key (protegida mediante Java Dotenv)
 
 ---
 
 ## ▶️ Ejecución
 
 Puedes compilar y ejecutar desde la terminal o usar **IntelliJ IDEA**:
-'''bash
+```bash
 cd src
 javac vista/Principal.java
 java vista.Principal
-
+```
 ---
 
 ## Ejemplo de Salida
@@ -66,6 +69,5 @@ Archivo guardado como: conversion_USD_a_COP.json
 
 ---
 
-👨‍💻 Autor
-Wilmar Diaz
-GitHub: Wilmar637
+## 👨‍💻 Autor
+🔗 [GitHub: Wilmar637](https://github.com/Wilmar637)
