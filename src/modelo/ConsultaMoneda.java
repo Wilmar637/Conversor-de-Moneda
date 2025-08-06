@@ -2,6 +2,7 @@ package modelo;
 
 import com.google.gson.Gson;
 import com.google.gson.JsonObject;
+import io.github.cdimascio.dotenv.Dotenv;
 
 import java.net.URI;
 import java.net.http.HttpClient;
@@ -10,7 +11,8 @@ import java.net.http.HttpResponse;
 
 public class ConsultaMoneda {
 
-    private static final String API_KEY = "4e3cac395e4848440a0c6ff8";
+    private static final Dotenv dotenv = Dotenv.load(); // Carga el .env
+    private static final String API_KEY = dotenv.get("EXCHANGE_API_KEY");
 
     public Moneda consultaMoneda(String baseCode, String targetCode, double amount) {
         String url = String.format(
