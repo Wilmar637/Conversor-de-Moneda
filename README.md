@@ -18,6 +18,18 @@ Aplicación de consola desarrollada en **Java 17** con arquitectura **MVC (Model
 
 ---
 
+## ⚠️ Aviso de Seguridad
+
+En el primer commit de este proyecto, se expuso una clave API por error, como parte de un proceso de aprendizaje.
+
+- La clave ha sido revocada y ya no es válida.
+- A partir del commit 4, se implementó correctamente el uso de archivos `.env` y manejo seguro de secretos.
+- Este repositorio permanece público con fines educativos para mostrar tanto los errores como las buenas prácticas.
+
+🔐 ¡Nunca subas claves sensibles a GitHub! Usa variables de entorno y `.gitignore` desde el inicio del proyecto.
+
+---
+
 ## 🗂️ Estructura del Proyecto
 
 ```text
