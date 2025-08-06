@@ -56,7 +56,7 @@ java vista.Principal
 ---
 
 ## Ejemplo de Salida
-********** Bienvenido/a al Conversor de Moneda **********
+```********** Bienvenido/a al Conversor de Moneda **********
 
 1. Dólar => Peso Argentino
 2. Peso Argentino => Dólar
@@ -66,6 +66,7 @@ Seleccione Opción:
 Ingrese el valor en USD: 1
 El valor 1,00 [USD] corresponde a = 4128,18 [COP]
 Archivo guardado como: conversion_USD_a_COP.json
+```
 
 ---
 
